@@ -41,14 +41,7 @@
 
 ### 🧸 Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=figma, notion, java, SpringBoot, Python, MySQL, Docker, Git)](https://skillicons.dev)
-
-[![Java](https://img.shields.io/badge/Java-F48C8C?style=flat&logo=java&logoColor=white)](https://www.java.com/)
-[![SpringBoot](https://img.shields.io/badge/SpringBoot-C1E1C1?style=flat&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
-[![Python](https://img.shields.io/badge/Python-FFE59E?style=flat&logo=python&logoColor=3776AB)](https://www.python.org/)
-[![MySQL](https://img.shields.io/badge/MySQL-B2EBF2?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![Docker](https://img.shields.io/badge/Docker-CCF2F4?style=flat&logo=docker&logoColor=0db7ed)](https://www.docker.com/)
-[![Git](https://img.shields.io/badge/Git-FAC898?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
+[![My Skills](https://skillicons.dev/icons?i=figma,notion,java,spring,python,mysql,docker,git)](https://skillicons.dev)
 
 ---
 

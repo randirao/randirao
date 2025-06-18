@@ -52,37 +52,37 @@
 
 <h3 align="center">🌸 My Cozy Stats</h3>
 
-<br>
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=randirao&show_icons=true&theme=tokyonight_light&hide_title=true&hide_border=true" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=randirao&layout=compact&theme=tokyonight_light&hide_border=true" />
+  <img src="https://streak-stats.demolab.com?user=randirao&theme=tokyonight_light&hide_border=true" />
+</div>
+
+---
+
+<h3 align="center">📮 Let's connect</h3>
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=randirao&show_icons=true&theme=tokyonight_light&hide_title=true&hide_border=true" />
-<br/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=randirao&layout=compact&theme=tokyonight_light&hide_border=true" />
-<br/>
-<img src="https://streak-stats.demolab.com?user=randirao&theme=tokyonight_light&hide_border=true" />
+<a href="https://github.com/randirao">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
+</a>
+<a href="https://www.instagram.com/han22._x" target="_blank">
+  <img src="https://img.shields.io/badge/Instagram-FADADD?style=for-the-badge&logo=instagram&logoColor=white" />
+</a>
+<a href="randirao4245@gmail.com">
+  <img src="https://img.shields.io/badge/Email-ffeaa7?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
 
 </div>
 
 ---
 
-### 🥺 Let's connect!
+### 🌟 tiny facts about me
 
-[![Instagram](https://img.shields.io/badge/📸%20Instagram-FFC1CC?style=for-the-badge)](https://instagram.com/han22._x)
-[![Blog](https://img.shields.io/badge/📘%20Blog-FFF176?style=for-the-badge)](https://velog.io/@randirao)
-
----
-
-### 📒 randirao’s cuteness log
-
-<div align="center" style="background-color:#FFE3E3; padding: 20px; border-radius: 12px; width: 80%; margin: auto;">
-
-📆 오늘도 서버와 놀았어요  
-📦 감자처럼 말랑한 API 1개 제작  
-🌟 기분: 9/10 (코드가 너무 예뻐서)  
-🎀 오늘의 다짐: “try-catch문에도 사랑을 담자”
-
-</div>
+- 백엔드는… 아직도 낯설어요 🙈  
+- 노동요는 J-pop이나 진격의 거인 OST 🎧  
+- 귀여운 이모티콘엔 진심입니다 (｡•̀ᴗ-)✧  
 
 ---
 

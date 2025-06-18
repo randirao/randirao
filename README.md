@@ -14,14 +14,11 @@
 
 ---
 
-### 💫 I love making...
+### 💛 I love making
 
 | 프로젝트 | 설명 | 링크 |
 |----------|------|------|
-| 🧁 CatAPI | 고양이 정보를 주는 API 서버 | [바로가기](https://github.com/randirao/catapi) |
-| 🍯 SweetCRUD | CRUD를 말랑하게 배운 프로젝트 | [바로가기](https://github.com/randirao/sweetcrud) |
-| 🐚 Slowlog | 느린 SQL 로그를 시각화한 도구 | [바로가기](https://github.com/randirao/slowlog) |
-
+| 💧 물듬 | 전공 동아리 운영 플랫폼 | [바로가기](https://github.com/arabssm) |
 ---
 
 ### 🧸 Tech Stack

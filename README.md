@@ -41,21 +41,32 @@
 
 ### 🧸 Tech Stack
 
-![Java](https://img.shields.io/badge/Java-FFB6B9?style=flat-square&logo=openjdk&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-C1E1C1?style=flat-square&logo=springboot&logoColor=white)
-![Python](https://img.shields.io/badge/Python-FFE59E?style=flat-square&logo=python&logoColor=3776AB)
-![MySQL](https://img.shields.io/badge/MySQL-B2EBF2?style=flat-square&logo=mysql&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-CCF2F4?style=flat-square&logo=docker&logoColor=0db7ed)
-![Git](https://img.shields.io/badge/Git-FAC898?style=flat-square&logo=git&logoColor=white)
+[![Java](https://img.shields.io/badge/Java-F48C8C?style=flat&logo=java&logoColor=white)](https://www.java.com/)
+[![SpringBoot](https://img.shields.io/badge/SpringBoot-C1E1C1?style=flat&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![Python](https://img.shields.io/badge/Python-FFE59E?style=flat&logo=python&logoColor=3776AB)](https://www.python.org/)
+[![MySQL](https://img.shields.io/badge/MySQL-B2EBF2?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com/)
+[![Docker](https://img.shields.io/badge/Docker-CCF2F4?style=flat&logo=docker&logoColor=0db7ed)](https://www.docker.com/)
+[![Git](https://img.shields.io/badge/Git-FAC898?style=flat&logo=git&logoColor=white)](https://git-scm.com/)
 
 ---
 
 ### 🌸 My Cozy Stats
 
-![randirao's GitHub stats](https://github-readme-stats.vercel.app/api?username=randirao&show_icons=true&theme=vue&hide_border=true&icon_color=FFB6B9)  
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=randirao&layout=compact&theme=vue&hide_border=true)  
-[![GitHub Streak](https://streak-stats.demolab.com?user=randirao&theme=vue&hide_border=true)](https://git.io/streak-stats)
 
+**🐣 Backend**  
+Spring Boot · REST API · JPA · MyBatis · JWT
+
+**🐬 Database**  
+MySQL · Oracle · Redis
+
+**📦 DevOps & Infra**  
+Docker · Git · GitHub Actions
+
+**🧁 Frontend (조금)**  
+HTML · CSS · Thymeleaf
+
+**🛋 Tools**  
+IntelliJ · Postman · Notion
 ---
 
 ### 🥺 Let's connect!

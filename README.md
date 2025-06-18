@@ -16,9 +16,27 @@
 
 ### 💛 I love making
 
-| 프로젝트 | 설명 | 링크 |
-|----------|------|------|
-| 💧 물듬 | 전공 동아리 운영 플랫폼 | [바로가기](https://github.com/arabssm) |
+<div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th>프로젝트</th>
+      <th>설명</th>
+      <th>링크</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>💧 물듬</td>
+      <td>전공 동아리 운영 플랫폼</td>
+      <td><a href="https://github.com/arabssm">바로가기</a></td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
 ---
 
 ### 🧸 Tech Stack

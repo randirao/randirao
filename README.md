@@ -50,23 +50,20 @@
 
 ---
 
-### 🌸 My Cozy Stats
+<h3 align="center">🌸 My Cozy Stats</h3>
 
+<br>
 
-**🐣 Backend**  
-Spring Boot · REST API · JPA · MyBatis · JWT
+<div align="center">
 
-**🐬 Database**  
-MySQL · Oracle · Redis
+<img src="https://github-readme-stats.vercel.app/api?username=randirao&show_icons=true&theme=tokyonight_light&hide_title=true&hide_border=true" />
+<br/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=randirao&layout=compact&theme=tokyonight_light&hide_border=true" />
+<br/>
+<img src="https://streak-stats.demolab.com?user=randirao&theme=tokyonight_light&hide_border=true" />
 
-**📦 DevOps & Infra**  
-Docker · Git · GitHub Actions
+</div>
 
-**🧁 Frontend (조금)**  
-HTML · CSS · Thymeleaf
-
-**🛋 Tools**  
-IntelliJ · Postman · Notion
 ---
 
 ### 🥺 Let's connect!

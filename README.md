@@ -6,7 +6,7 @@
 
 ---
 
-### 🌼 About me
+### About me
 
 🐣 새하얀 도화지 위에 나만의 색을 입혀가고 있어요.  
 아직은 비어 있는 부분이 많지만, 천천히 채워가는 중이에요.  
@@ -14,7 +14,7 @@
 
 ---
 
-### 💛 I love making
+### Service
 
 <div align="center">
 
@@ -28,9 +28,14 @@
   </thead>
   <tbody>
     <tr>
-      <td>💧 물듬</td>
-      <td>전공 동아리 운영 플랫폼</td>
+      <td>물듬</td>
+      <td>전공 동아리 운영 서비스</td>
       <td><a href="https://github.com/arabssm">바로가기</a></td>
+    </tr>
+    <tr>
+      <td>어디</td>
+      <td>학교 분실물 관리 서비스</td>
+      <td><a href="https://github.com/BSSMEOD">바로가기</a></td>
     </tr>
   </tbody>
 </table>
@@ -45,7 +50,7 @@
 
 ---
 
-<h3 align="center">🌸 My Cozy Stats</h3>
+<h3 align="center">My Cozy Stats</h3>
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=randirao&show_icons=true&theme=tokyonight_light&hide_title=true&hide_border=true" />
@@ -55,7 +60,7 @@
 
 ---
 
-<h3 align="center">📮 Let's connect</h3>
+<h3 align="center">connect</h3>
 
 <div align="center">
 
@@ -72,23 +77,6 @@
 </div>
 
 ---
-
-### 🌟 tiny facts about me
-
-- 백엔드는… 아직도 낯설어요 🙈  
-- 노동요는 J-pop이나 진격의 거인 OST 🎧  
-- 귀여운 이모티콘엔 진심입니다 (｡•̀ᴗ-)✧  
-
----
-
-<!-- 방문자 수 및 마무리 -->
-<div style="margin-top: 20px;">
-
-![visitors](https://komarev.com/ghpvc/?username=randirao&color=FFB6B9&style=flat-square)
-
-<p style="font-size: 14px; color: #888; margin: 10px 0 5px;">
-🐥 Thanks for visiting my cozy space!
-</p>
 
 </div>
 

@@ -126,7 +126,7 @@ export default function App() {
           <div className="text-center text-slate-600 text-sm">
             <p className="flex items-center justify-center gap-2">
               <span>✨</span>
-              Made with passion by 이하은
+                <a href={"https://github.com/randirao"}>Made with passion by 이하은</a>
               <span>✨</span>
             </p>
           </div>

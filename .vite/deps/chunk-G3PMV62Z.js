@@ -1,10 +1,12 @@
-"use strict";
 var __create = Object.create;
 var __defProp = Object.defineProperty;
 var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
 var __getOwnPropNames = Object.getOwnPropertyNames;
 var __getProtoOf = Object.getPrototypeOf;
 var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __commonJS = (cb, mod) => function __require() {
+  return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
+};
 var __export = (target, all) => {
   for (var name in all)
     __defProp(target, name, { get: all[name], enumerable: true });
@@ -25,17 +27,9 @@ var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__ge
   isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
   mod
 ));
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
-// packages/react/use-layout-effect/src/index.ts
-var index_exports = {};
-__export(index_exports, {
-  useLayoutEffect: () => useLayoutEffect2
-});
-module.exports = __toCommonJS(index_exports);
-
-// packages/react/use-layout-effect/src/use-layout-effect.tsx
-var React = __toESM(require("react"));
-var useLayoutEffect2 = globalThis?.document ? React.useLayoutEffect : () => {
+export {
+  __commonJS,
+  __export,
+  __toESM
 };
-//# sourceMappingURL=index.js.map

@@ -40,7 +40,7 @@ export default function App() {
   const CurrentComponent = getCurrentComponent();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-stone-50 to-yellow-100">
+    <div className="min-h-screen bg-gradient-to-br from-stone-50 to-yellow-100 flex flex-col">
       {/* Header */}
       <header className="bg-white/90 backdrop-blur-sm shadow-sm">
         <div className="max-w-7xl mx-auto px-4 py-4">
@@ -114,7 +114,7 @@ export default function App() {
       )}
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-4 py-8">
+      <main className="flex-1 max-w-7xl mx-auto px-4 py-8 w-full">
         <div className="bg-white/40 backdrop-blur-sm rounded-3xl shadow-lg overflow-hidden">
           {CurrentComponent && <CurrentComponent />}
         </div>

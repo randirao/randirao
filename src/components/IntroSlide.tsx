@@ -1,6 +1,7 @@
 import React from 'react';
 import { User, Code, Database, Zap } from 'lucide-react';
 import { Card } from './ui/card';
+import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export default function IntroSlide() {
   return (
@@ -8,13 +9,22 @@ export default function IntroSlide() {
       <div className="max-w-4xl mx-auto text-center">
         {/* Profile Section */}
         <div className="mb-12">
-          <div className="w-28 h-28 bg-gradient-to-br from-sky-200 to-sky-300 rounded-full mx-auto mb-6 flex items-center justify-center shadow-lg">
-            <span className="text-4xl">👩‍💻</span>
+          <div className="w-28 h-28 mx-auto mb-6">
+            <ImageWithFallback
+              src="/profile.jpg"
+              alt="프로필 사진"
+              className="w-28 h-28 rounded-full object-cover shadow-lg border-4 border-white/50"
+              style={{
+                aspectRatio: '1 / 1',
+                objectFit: 'cover',
+                objectPosition: 'center'
+              }}
+            />
           </div>
           
           <h1 className="text-4xl text-slate-800 mb-4">이하은</h1>
           <p className="text-xl text-slate-600 mb-8">
-            성능과 안정성을 중시하는 백엔드 개발자입니다
+              도화지에 나만의 색을 채우듯, 꾸준히 성장하는 백엔드 개발자입니다.”
           </p>
         </div>
 
@@ -51,7 +61,7 @@ export default function IntroSlide() {
         {/* Quote */}
         <div className="mt-12 p-6 bg-gradient-to-r from-sky-50 to-yellow-200 rounded-2xl shadow-md border border-stone-200">
           <p className="text-slate-700 italic">
-            "사용자에게 가치를 전달하는 견고한 시스템을 구축하는 것이 저의 목표입니다"
+            "끊임없이 색을 섞고 덧칠하며, 사람들의 일상에 스며드는 그림을 남기는 것이 제 목표입니다"
           </p>
         </div>
       </div>

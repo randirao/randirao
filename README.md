@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # randirao
 
 안녕하세요, 부소마고4기 이하은입니다.  
@@ -38,3 +39,16 @@
 </div>
 
 ---
+=======
+
+  # Backend Developer Portfolio Slides
+
+  This is a code bundle for Backend Developer Portfolio Slides. The original project is available at https://www.figma.com/design/PqDAC8SkpblF2FH9oFeFsP/Backend-Developer-Portfolio-Slides.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  
+>>>>>>> 98df41e (haeun)

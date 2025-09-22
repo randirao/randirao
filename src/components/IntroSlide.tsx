@@ -61,7 +61,7 @@ export default function IntroSlide() {
         {/* Quote */}
         <div className="mt-12 p-6 bg-gradient-to-r from-sky-50 to-yellow-200 rounded-2xl shadow-md border border-stone-200">
           <p className="text-slate-700 italic">
-            "끊임없이 색을 섞고 덧칠하며, 사람들의 일상에 스며드는 그림을 남기는 것이 제 목표입니다"
+            "끊임없이 색을 섞고 덧칠하며, 사람들의 일상에 스며드는 그림을 남기는 것이 제 목표입니다."
           </p>
         </div>
       </div>

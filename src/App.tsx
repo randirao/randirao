@@ -1,38 +1,21 @@
 import React, { useState } from 'react';
-import { User, Code, Briefcase, Star, Mail, Laptop } from 'lucide-react';
+import { User, Code, Briefcase, Mail } from 'lucide-react';
 import IntroSlide from './components/IntroSlide';
-import TechStackSlide from './components/TechStackSlide';
-import Project1Slide from './components/Project1Slide';
-import Project2Slide from './components/Project2Slide';
-import Project3Slide from './components/Project3Slide';
-import ExperienceSlide from './components/ExperienceSlide';
-import StrengthsSlide from './components/StrengthsSlide';
+import SkillsSlide from './components/SkillsSlide';
+import WorkSlide from './components/WorkSlide';
 import ContactSlide from './components/ContactSlide';
 
 const sections = [
   { id: 'intro', component: IntroSlide, title: '자기소개', emoji: '👋', icon: User },
-  { id: 'tech', component: TechStackSlide, title: '기술 스택', emoji: '🛠️', icon: Code },
-  { id: 'projects', component: null, title: '프로젝트', emoji: '💼', icon: Briefcase },
-  { id: 'experience', component: ExperienceSlide, title: '경험', emoji: '🚀', icon: Laptop },
-  { id: 'strengths', component: StrengthsSlide, title: '강점', emoji: '✨', icon: Star },
+  { id: 'skills', component: SkillsSlide, title: '역량', emoji: '🛠️', icon: Code },
+  { id: 'work', component: WorkSlide, title: '성과', emoji: '💼', icon: Briefcase },
   { id: 'contact', component: ContactSlide, title: '연락처', emoji: '📧', icon: Mail },
-];
-
-const projects = [
-  { id: 'project1', component: Project1Slide, title: '실시간 채팅 플랫폼', emoji: '💬' },
-  { id: 'project2', component: Project2Slide, title: 'API 게이트웨이', emoji: '🌐' },
-  { id: 'project3', component: Project3Slide, title: '모니터링 시스템', emoji: '📊' },
 ];
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('intro');
-  const [activeProject, setActiveProject] = useState('project1');
 
   const getCurrentComponent = () => {
-    if (activeSection === 'projects') {
-      const project = projects.find(p => p.id === activeProject);
-      return project?.component;
-    }
     const section = sections.find(s => s.id === activeSection);
     return section?.component;
   };
@@ -88,30 +71,6 @@ export default function App() {
           ))}
         </div>
       </div>
-
-      {/* Projects Sub-navigation */}
-      {activeSection === 'projects' && (
-        <div className="bg-white/60 backdrop-blur-sm border-t border-stone-200">
-          <div className="max-w-7xl mx-auto px-4 py-3">
-            <div className="flex items-center gap-2 overflow-x-auto">
-              {projects.map((project) => (
-                <button
-                  key={project.id}
-                  onClick={() => setActiveProject(project.id)}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm whitespace-nowrap transition-all duration-300 ${
-                    activeProject === project.id
-                      ? 'bg-sky-200 text-slate-800 shadow-md'
-                      : 'text-slate-600 hover:bg-white/60 bg-white/40'
-                  }`}
-                >
-                  <span className="text-lg">{project.emoji}</span>
-                  <span>{project.title}</span>
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Main Content */}
       <main className="flex-1 max-w-7xl mx-auto px-4 py-8 w-full">

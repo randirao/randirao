@@ -82,7 +82,7 @@ export default function ContactSlide() {
                 <MapPin className="w-4 h-4 text-slate-500" />
                 <span className="text-sm text-slate-500">위치</span>
               </div>
-              <p className="text-slate-700">서울특별시 (근무지 협의 가능)</p>
+              <p className="text-slate-700">경상남도 양산시 (근무지 협의 가능)</p>
             </div>
           </Card>
 

@@ -1,53 +1,30 @@
-# randirao
+# Backend Developer Portfolio Slides
 
-안녕하세요, 부소마고4기 이하은입니다.  
-백엔드 개발을 공부하면서 프로젝트를 진행하고 있습니다.  
+안녕하세요, 부산소프트웨어마이스터고 4기 이하은입니다.  
+실제 학교 현장에서 느낀 불편함을 해결하는 백엔드 서비스를 만들고 있습니다.
 
 ---
 
 ## Projects
 
-| 프로젝트 | 설명 | 링크 |
-|----------|------|------|
-| 물듬 | 전공 동아리 운영 서비스 | [github.com/arabssm](https://github.com/arabssm) |
-| 어디 | 학교 분실물 관리 서비스 | [github.com/BSSMEOD](https://github.com/BSSMEOD) |
+| 프로젝트 | 소개 | 역할 | 링크 |
+|----------|------|------|------|
+| 물듬 | 전공동아리 물품 신청부터 공지, 역대 활동 아카이브까지 관리하는 교내 플랫폼 | Backend Developer | [서비스](http://v2.muldum.com/) · [GitHub](https://github.com/arabssm) |
+| 어디 | 생활부 분실물 처리 흐름을 정리한 관리 서비스 | PM & Backend Developer | [GitHub](https://github.com/BSSMEOD) |
 
 ---
 
 ## Tech Stack
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=java,spring,postgresql,redis,docker,git,github,figma,notion&perline=6" />
+  <img src="https://skillicons.dev/icons?i=java,spring,postgresql,mysql,oracle,docker,git&perline=7" />
 </p>
 
 ---
 
-## Stats
+## Running the code
 
-<div align="center">
-
-<!-- 잔디 모양 -->
-[![GitHub Streak](https://streak-stats.demolab.com?user=randirao&theme=tokyonight&hide_border=true)](https://git.io/streak-stats)
-
-<!-- 언어 비중 -->
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=randirao&layout=compact&theme=tokyonight&hide_border=true)
-
-<!-- 활동 통계 -->
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=randirao&show_icons=true&theme=tokyonight&hide_border=true)
-
-</div>
-
----
-=======
-
-  # Backend Developer Portfolio Slides
-
-  This is a code bundle for Backend Developer Portfolio Slides. The original project is available at https://www.figma.com/design/PqDAC8SkpblF2FH9oFeFsP/Backend-Developer-Portfolio-Slides.
-
-  ## Running the code
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
-  
->>>>>>> 98df41e (haeun)
+```bash
+npm install
+npm run dev
+```

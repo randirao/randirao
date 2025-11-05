@@ -1,46 +1,36 @@
 import React from 'react';
-import { Brain, Zap, Shield, Users, Target, BookOpen } from 'lucide-react';
+import { Brain, Users, Target, BookOpen } from 'lucide-react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Progress } from './ui/progress';
 
 const techCategories = [
   {
-    title: '백엔드 언어 & 프레임워크',
+    title: 'Backend',
     emoji: '☕',
     items: [
-      { name: 'Java', level: 'Expert', emoji: '☕' },
-      { name: 'Spring Boot', level: 'Expert', emoji: '🌱' },
-      { name: 'Spring Security', level: 'Advanced', emoji: '🛡️' },
-      { name: 'JPA/Hibernate', level: 'Advanced', emoji: '🔗' },
+      { name: 'Java', emoji: '☕' },
+      { name: 'Spring Boot', emoji: '🌱' }
     ]
   },
   {
-    title: '데이터베이스',
+    title: 'Database',
     emoji: '🗃️',
     items: [
-      { name: 'PostgreSQL', level: 'Expert', emoji: '🐘' },
-      { name: 'Redis', level: 'Advanced', emoji: '⚡' },
-      { name: 'MySQL', level: 'Intermediate', emoji: '🐬' },
+      { name: 'PostgreSQL', emoji: '🐘' },
+      { name: 'MySQL', emoji: '🐬' },
+      { name: 'Oracle', emoji: '🏛️' }
     ]
   },
   {
-    title: '인프라 & DevOps',
-    emoji: '☁️',
+    title: 'Infra & Collaboration',
+    emoji: '⚙️',
     items: [
-      { name: 'AWS EC2/RDS', level: 'Advanced', emoji: '☁️' },
-      { name: 'Docker', level: 'Advanced', emoji: '🐳' },
-      { name: 'Linux', level: 'Intermediate', emoji: '🐧' },
-      { name: 'Git', level: 'Expert', emoji: '🌳' },
+      { name: 'Docker', emoji: '🐳' },
+      { name: 'Git', emoji: '🌳' }
     ]
   }
 ];
-
-const levelColors = {
-  'Expert': 'bg-green-100 text-green-800',
-  'Advanced': 'bg-blue-100 text-blue-800',
-  'Intermediate': 'bg-yellow-100 text-yellow-800'
-};
 
 const technicalStrengths = [
   {
@@ -49,33 +39,21 @@ const technicalStrengths = [
     color: 'sky',
     description: '복잡한 비즈니스 로직을 분석하고 효율적인 해결책을 제시합니다',
     examples: [
-      '동시성 문제 해결을 위한 락 메커니즘 구현',
-      '메모리 누수 문제 분석 및 해결',
-      '성능 병목 지점 식별 및 개선'
+      '요구사항을 기반으로 핵심 기능을 빠르게 설계하고 구현',
+      '데이터 흐름을 정리해 안정적인 API 계약 확립',
+      '문제 재현과 원인 분석을 통해 개선 방안을 도출'
     ],
     score: 90
   },
   {
-    title: '성능 최적화',
-    icon: Zap,
-    color: 'yellow',
-    description: '시스템의 성능을 분석하고 최적화하여 사용자 경험을 개선합니다',
+    title: '서비스 안정성',
+    icon: Target,
+    color: 'amber',
+    description: '실제 사용자의 불편을 해결하는 기능을 안정적으로 제공하는 데 집중합니다',
     examples: [
-      '데이터베이스 쿼리 최적화로 응답시간 80% 단축',
-      '캐싱 전략 도입으로 서버 부하 60% 감소',
-      'Connection Pool 튜닝으로 동시 처리량 증대'
-    ],
-    score: 85
-  },
-  {
-    title: '안정성 & 보안',
-    icon: Shield,
-    color: 'sky',
-    description: '견고하고 안전한 시스템 구축을 위해 항상 보안을 고려합니다',
-    examples: [
-      'Spring Security를 활용한 인증/인가 구현',
-      'SQL Injection 방지를 위한 prepared statement 사용',
-      '에러 핸들링 및 로깅 시스템 구축'
+      '실사용 환경을 반영한 예외 케이스를 정의하고 테스트',
+      '오류 상황을 빠르게 파악할 수 있도록 로깅 포인트 설계',
+      '릴리즈 후에도 사용 피드백을 반영해 기능을 지속 개선'
     ],
     score: 88
   }
@@ -125,19 +103,11 @@ export default function SkillsSlide() {
                 <h3 className="text-lg text-slate-800">{category.title}</h3>
               </div>
               
-              <div className="space-y-3">
+              <div className="space-y-2">
                 {category.items.map((tech, techIndex) => (
-                  <div key={techIndex} className="flex items-center justify-between p-2 bg-white/50 rounded-lg">
-                    <div className="flex items-center gap-3">
-                      <span className="text-xl">{tech.emoji}</span>
-                      <span className="text-slate-700 text-sm">{tech.name}</span>
-                    </div>
-                    <Badge 
-                      variant="secondary" 
-                      className={`text-xs ${levelColors[tech.level as keyof typeof levelColors]} rounded-full`}
-                    >
-                      {tech.level}
-                    </Badge>
+                  <div key={techIndex} className="flex items-center gap-3 p-2 bg-white/50 rounded-lg">
+                    <span className="text-xl">{tech.emoji}</span>
+                    <span className="text-slate-700 text-sm">{tech.name}</span>
                   </div>
                 ))}
               </div>
@@ -149,7 +119,7 @@ export default function SkillsSlide() {
         <div className="mt-12 p-6 bg-gradient-to-r from-sky-50 to-yellow-200 rounded-2xl shadow-md border border-stone-200">
           <h4 className="text-lg text-slate-800 mb-4 text-center">✨ 추가 역량</h4>
           <div className="flex flex-wrap gap-2 justify-center">
-            {['RESTful API', 'Microservices', 'TDD', 'Clean Architecture', 'Design Patterns', 'Performance Tuning', 'Code Review'].map((skill, index) => (
+            {['요구사항 분석', 'API 설계', '데이터 모델링', '문서화', '협업 회의록', '테스트 시나리오 정리', '피드백 반영'].map((skill, index) => (
               <Badge key={index} variant="outline" className="border-yellow-300 text-slate-600 bg-yellow-50/50 rounded-full px-3 py-1">
                 {skill}
               </Badge>

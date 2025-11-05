@@ -10,14 +10,14 @@ const contactInfo = [
   {
     icon: Mail,
     label: '이메일',
-    value: 'haeun.lee.dev@email.com',
-    href: 'mailto:haeun.lee.dev@email.com'
+    value: 'randirao4245@gmail.com',
+    href: 'mailto:randirao4245@gmail.com'
   },
   {
     icon: Phone,
     label: '전화번호',
-    value: '010-1234-5678',
-    href: 'tel:010-1234-5678'
+    value: '010-5606-8381',
+    href: 'tel:010-5606-8381'
   },
   {
     icon: Github,
@@ -28,14 +28,14 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: 'LinkedIn',
-    value: 'linkedin.com/in/haeun-lee-dev',
-    href: 'https://linkedin.com/in/haeun-lee-dev'
+    value: 'linkedin.com/in/haeun218',
+    href: 'https://www.linkedin.com/in/haeun218'
   },
   {
     icon: Instagram,
     label: 'Instagram',
-    value: 'instagram.com/randirao',
-    href: 'https://instagram.com/randirao'
+    value: 'instagram.com/han22._x',
+    href: 'https://www.instagram.com/han22._x/'
   }
 ];
 

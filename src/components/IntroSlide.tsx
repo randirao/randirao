@@ -5,7 +5,13 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 
 export default function IntroSlide() {
   return (
-    <div className="p-8">
+    <div
+         style={{
+             display: 'flex',
+             height: '80vh',
+             padding: '3rem',
+         }}
+    >
       <div className="max-w-4xl mx-auto text-center">
         {/* Profile Section */}
         <div className="mb-12">
@@ -24,7 +30,7 @@ export default function IntroSlide() {
           
           <h1 className="text-4xl text-slate-800 mb-4">이하은</h1>
           <p className="text-xl text-slate-600 mb-8">
-              도화지에 나만의 색을 채우듯, 꾸준히 성장하는 백엔드 개발자입니다.”
+              "도화지에 나만의 색을 채우듯, 꾸준히 성장하는 백엔드 개발자입니다.”
           </p>
         </div>
 
@@ -49,11 +55,11 @@ export default function IntroSlide() {
           </Card>
 
           <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl text-center">
-            <span className="text-3xl block mb-3">⚡</span>
-            <h3 className="text-lg text-slate-800 mb-2">가벼운 서비스</h3>
+            <span className="text-3xl block mb-3">🤝</span>
+            <h3 className="text-lg text-slate-800 mb-2">신뢰를 쌓는 약속</h3>
             <p className="text-slate-600 text-sm">
-              지연과 병목을 줄여,<br />
-              빠르고 효율적인 서비스를 지향합니다.
+              말한 것은 지키고,<br />
+              지키기 어려우면 먼저 알립니다.
             </p>
           </Card>
         </div>
@@ -61,7 +67,7 @@ export default function IntroSlide() {
         {/* Quote */}
         <div className="mt-12 p-6 bg-gradient-to-r from-sky-50 to-yellow-200 rounded-2xl shadow-md border border-stone-200">
           <p className="text-slate-700 italic">
-            "끊임없이 색을 섞고 덧칠하며, 사람들의 일상에 스며드는 그림을 남기는 것이 제 목표입니다."
+            "다양한 관점을 조합해 더 나은 경험을 만드는 개발자로 계속 성장하고자 합니다."
           </p>
         </div>
       </div>

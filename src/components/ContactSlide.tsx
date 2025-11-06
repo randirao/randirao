@@ -44,7 +44,8 @@ export default function ContactSlide() {
     <div className="p-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-3xl text-slate-800 mb-4">향후 목표 & 연락처</h1>
+          <h1 className="text-3xl text-slate-800 mb-4"
+          >향후 목표 & 연락처</h1>
           <p className="text-slate-600">
             지속적인 성장을 통해 가치 있는 시스템을 만들어가겠습니다
           </p>

@@ -32,28 +32,28 @@ export default function IntroSlide() {
         <div className="grid md:grid-cols-3 gap-4">
           <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl text-center">
             <span className="text-3xl block mb-3">✨</span>
-            <h3 className="text-lg text-slate-800 mb-2">클린 코드</h3>
+            <h3 className="text-lg text-slate-800 mb-2">의도가 보이는 코드</h3>
             <p className="text-slate-600 text-sm">
-              가독성 높고 유지보수 쉬운<br />
-              코드 작성 집중
+              쉽게 읽히는 코드를 목표로,<br />
+              명확한 구조와 일관성을 연습합니다.
             </p>
           </Card>
 
           <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl text-center">
             <span className="text-3xl block mb-3">🗄️</span>
-            <h3 className="text-lg text-slate-800 mb-2">데이터베이스 설계</h3>
+            <h3 className="text-lg text-slate-800 mb-2">견고한 데이터 구조</h3>
             <p className="text-slate-600 text-sm">
-              효율적인 스키마 설계와<br />
-              쿼리 최적화 경험
+              데이터 흐름을 이해하며,<br />
+              확장성과 정합성을 함께 고려합니다.
             </p>
           </Card>
 
           <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl text-center">
             <span className="text-3xl block mb-3">⚡</span>
-            <h3 className="text-lg text-slate-800 mb-2">성능 최적화</h3>
+            <h3 className="text-lg text-slate-800 mb-2">가벼운 서비스</h3>
             <p className="text-slate-600 text-sm">
-              시스템 병목 지점 파악과<br />
-              성능 개선 역량
+              지연과 병목을 줄여,<br />
+              빠르고 효율적인 서비스를 지향합니다.
             </p>
           </Card>
         </div>

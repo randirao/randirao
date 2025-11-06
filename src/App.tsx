@@ -25,7 +25,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-stone-50 to-yellow-100 flex flex-col">
       {/* Header */}
-      <div className="sticky top-0 z-50">
+      <div className="fixed top-0 left-0 right-0 z-50">
         <header className="bg-white/90 backdrop-blur-sm shadow-sm">
           <div className="max-w-7xl mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
@@ -75,7 +75,7 @@ export default function App() {
       </div>
 
       {/* Main Content */}
-      <main className="flex-1 max-w-7xl mx-auto px-4 py-8 w-full">
+      <main className="flex-1 max-w-7xl mx-auto px-4 w-full pt-[220px] md:pt-40 pb-16">
         <div className="bg-white/40 backdrop-blur-sm rounded-3xl shadow-lg overflow-hidden">
           {CurrentComponent && <CurrentComponent />}
         </div>

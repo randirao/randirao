@@ -23,35 +23,33 @@ export default function App() {
   const CurrentComponent = getCurrentComponent();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-stone-50 to-yellow-100 flex flex-col">
-      {/* Header */}
-      <div className="fixed top-0 left-0 right-0 z-50">
-        <header className="bg-white/90 backdrop-blur-sm shadow-sm">
-          <div className="max-w-7xl mx-auto px-4 py-4">
-            <div className="flex items-center justify-between">
-              <h1 className="text-xl text-slate-800 flex items-center gap-2">
-                <span className="text-2xl">👩‍💻</span>
-                이하은 포트폴리오
-              </h1>
-              <div className="hidden md:flex items-center gap-1 bg-white/80 rounded-full p-1 shadow-sm">
-                {sections.map((section) => (
-                  <button
-                    key={section.id}
-                    onClick={() => setActiveSection(section.id)}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm transition-all duration-300 ${
-                      activeSection === section.id
-                        ? 'bg-yellow-300 text-slate-800 shadow-md'
-                        : 'text-slate-600 hover:bg-white/60'
-                    }`}
-                  >
-                    <span className="text-lg">{section.emoji}</span>
-                    <span className="hidden lg:inline">{section.title}</span>
-                  </button>
-                ))}
-              </div>
+    <>
+      {/* Header - Fixed at top */}
+      <header style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100 }} className="bg-white/90 backdrop-blur-sm shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <h1 className="text-xl text-slate-800 flex items-center gap-2">
+              <span className="text-2xl">👩‍💻</span>
+              이하은 포트폴리오
+            </h1>
+            <div className="hidden md:flex items-center gap-1 bg-white/80 rounded-full p-1 shadow-sm">
+              {sections.map((section) => (
+                <button
+                  key={section.id}
+                  onClick={() => setActiveSection(section.id)}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm transition-all duration-300 ${
+                    activeSection === section.id
+                      ? 'bg-yellow-300 text-slate-800 shadow-md'
+                      : 'text-slate-600 hover:bg-white/60'
+                  }`}
+                >
+                  <span className="text-lg">{section.emoji}</span>
+                  <span className="hidden lg:inline">{section.title}</span>
+                </button>
+              ))}
             </div>
           </div>
-        </header>
+        </div>
 
         {/* Mobile Navigation */}
         <div className="md:hidden bg-white/90 backdrop-blur-sm border-t border-stone-200 shadow-sm">
@@ -72,27 +70,29 @@ export default function App() {
             ))}
           </div>
         </div>
-      </div>
+      </header>
 
-      {/* Main Content */}
-      <main className="flex-1 max-w-7xl mx-auto px-4 w-full pt-48 md:pt-36 lg:pt-32 pb-16">
-        <div className="bg-white/40 backdrop-blur-sm rounded-3xl shadow-lg overflow-hidden">
-          {CurrentComponent && <CurrentComponent />}
-        </div>
-      </main>
-
-      {/* Footer */}
-      <footer className="bg-white/90 backdrop-blur-sm border-t border-stone-200 mt-auto">
-        <div className="max-w-7xl mx-auto px-4 py-6">
-          <div className="text-center text-slate-600 text-sm">
-            <p className="flex items-center justify-center gap-2">
-              <span>✨</span>
-                <a href={"https://github.com/randirao"}>Made with passion by 이하은</a>
-              <span>✨</span>
-            </p>
+      <div className="min-h-screen bg-gradient-to-br from-stone-50 to-yellow-100 flex flex-col">
+        {/* Main Content */}
+        <main className="flex-1 max-w-7xl mx-auto px-4 w-full pt-48 md:pt-36 lg:pt-32 pb-16">
+          <div className="bg-white/40 backdrop-blur-sm rounded-3xl shadow-lg overflow-hidden">
+            {CurrentComponent && <CurrentComponent />}
           </div>
-        </div>
-      </footer>
-    </div>
+        </main>
+
+        {/* Footer */}
+        <footer className="bg-white/90 backdrop-blur-sm border-t border-stone-200 mt-auto">
+          <div className="max-w-7xl mx-auto px-4 py-6">
+            <div className="text-center text-slate-600 text-sm">
+              <p className="flex items-center justify-center gap-2">
+                <span>✨</span>
+                <a href={"https://github.com/randirao"}>Made with passion by 이하은</a>
+                <span>✨</span>
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </>
   );
 }

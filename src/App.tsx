@@ -75,7 +75,7 @@ export default function App() {
       </div>
 
       {/* Main Content */}
-      <main className="flex-1 max-w-7xl mx-auto px-4 w-full pt-[220px] md:pt-40 pb-16">
+      <main className="flex-1 max-w-7xl mx-auto px-4 w-full pt-48 md:pt-36 lg:pt-32 pb-16">
         <div className="bg-white/40 backdrop-blur-sm rounded-3xl shadow-lg overflow-hidden">
           {CurrentComponent && <CurrentComponent />}
         </div>

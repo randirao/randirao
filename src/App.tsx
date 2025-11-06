@@ -74,7 +74,7 @@ export default function App() {
 
       <div className="min-h-screen bg-gradient-to-br from-stone-50 to-yellow-100 flex flex-col">
         {/* Main Content */}
-        <main className="flex-1 max-w-7xl mx-auto px-4 w-full pt-48 md:pt-36 lg:pt-32 pb-16">
+        <main style={{ paddingTop: '150px' }} className="flex-1 max-w-7xl mx-auto px-4 w-full pb-16">
           <div className="bg-white/40 backdrop-blur-sm rounded-3xl shadow-lg overflow-hidden">
             {CurrentComponent && <CurrentComponent />}
           </div>

@@ -127,7 +127,7 @@ export default function ContactSlide() {
               "좋은 개발자는 코드만 잘 짜는 것이 아니라,<br />
               사용자와 동료를 생각하는 개발자라고 믿습니다"
             </p>
-            <footer className="text-slate-600">- 이하은</footer>
+            <footer className="text-slate-600">- 이하은 -</footer>
           </blockquote>
         </Card>
       </div>

@@ -119,7 +119,7 @@ export default function SkillsSlide() {
         <div className="mt-12 p-6 bg-gradient-to-r from-sky-50 to-yellow-200 rounded-2xl shadow-md border border-stone-200">
           <h4 className="text-lg text-slate-800 mb-4 text-center">✨ 추가 역량</h4>
           <div className="flex flex-wrap gap-2 justify-center">
-            {['요구사항 분석', 'API 설계', '데이터 모델링', '문서화', '협업 회의록', '테스트 시나리오 정리', '피드백 반영'].map((skill, index) => (
+            {['기획', '요구사항 분석', 'API 설계', '데이터 모델링', '문서화', '협업 회의록', '피드백 반영'].map((skill, index) => (
               <Badge key={index} variant="outline" className="border-yellow-300 text-slate-600 bg-yellow-50/50 rounded-full px-3 py-1">
                 {skill}
               </Badge>

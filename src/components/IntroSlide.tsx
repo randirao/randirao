@@ -30,7 +30,7 @@ export default function IntroSlide() {
           
           <h1 className="text-4xl text-slate-800 mb-4">이하은</h1>
           <p className="text-xl text-slate-600 mb-8">
-              "도화지에 나만의 색을 채우듯, 꾸준히 성장하는 백엔드 개발자입니다.”
+              "도화지에 나만의 색을 채우듯, 백엔드 개발자로서 꾸준히 성장하고 있습니다”
           </p>
         </div>
 

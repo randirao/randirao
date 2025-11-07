@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, ExternalLink, Calendar } from 'lucide-react';
+import { Github, ExternalLink, Calendar, FileText } from 'lucide-react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
 import { Button } from './ui/button';
@@ -8,6 +8,7 @@ const featuredProjects = [
   {
     badge: '교내 전공동아리 운영 서비스',
     title: '물듬',
+    logo: '/muldumLogo.svg',
     period: '2024 - 현재',
     description:
       '부산소프트웨어마이스터고 전공동아리 운영 과정에서의 불편함을 해결하기 위해 만든 통합 관리 플랫폼입니다.',
@@ -15,7 +16,7 @@ const featuredProjects = [
     background: [
       '동시에 편집 가능한 구글 시트로 물품을 신청하면서 데이터가 덮어쓰이거나 링크가 달라지는 문제가 반복됨',
       '학생과 교사가 같은 화면에서 물품을 확인하고 승인할 수 있는 시스템이 필요했음',
-      '역대 전공동아리 프로젝트가 졸업과 함께 빠르게 잊혀지는 문제를 해결하고자 기록을 남길 수 있는 공간을 기획'
+      '전공동아리 프로젝트가 2학년이 끝나면 함께 빠르게 잊혀지는 문제를 해결하고자 기록을 남길 수 있는 공간을 기획'
     ],
     coreFeatures: [
       '전공동아리 물품 신청·승인·이력 관리',
@@ -29,13 +30,15 @@ const featuredProjects = [
     tech: ['Java', 'Spring Boot', 'PostgreSQL', 'Docker', 'Git'],
     links: [
       { label: '서비스', icon: ExternalLink, href: 'http://v2.muldum.com/' },
-      { label: 'GitHub', icon: Github, href: 'https://github.com/arabssm' }
+      { label: 'GitHub', icon: Github, href: 'https://github.com/arabssm' },
+      { label: 'Notion', icon: FileText, href: 'https://www.notion.so/1c43e26381788020b411c0fd4e8cce4c' }
     ]
   },
   {
     badge: '교내 분실물 관리 서비스',
     title: '어디',
     period: '2024',
+    logo: '/eodiLogo.svg',
     description:
       '생활부에서 분실물을 노션으로 관리하던 번거로운 흐름을 개선하기 위해 기획한 교내 분실물 관리 서비스입니다.',
     role: 'PM & Backend Developer',
@@ -54,7 +57,11 @@ const featuredProjects = [
       '생활부 업무를 정형화된 프로세스로 정리해 처리 누락을 줄임'
     ],
     tech: ['Java', 'Spring Boot', 'MySQL', 'Git'],
-    links: [{ label: 'GitHub', icon: Github, href: 'https://github.com/BSSMEOD' }]
+    links: [
+      { label: '서비스', icon: ExternalLink, href: '' },
+      { label: 'GitHub', icon: Github, href: 'https://github.com/BSSMEOD' },
+      { label: 'Notion', icon: FileText, href: 'https://crawling-knot-d3e.notion.site/EODI-2a15e6368274805cae7bdf5f256a605a' }
+    ]
   }
 ];
 
@@ -99,7 +106,12 @@ export default function WorkSlide() {
               </div>
 
               <div className="space-y-4">
-                <h2 className="text-2xl md:text-3xl text-slate-800">{project.title}</h2>
+                <div className="flex items-center gap-4">
+                  {project.logo && (
+                    <img src={project.logo} alt={`${project.title} logo`} className="w-12 h-12 object-contain" />
+                  )}
+                  <h2 className="text-2xl md:text-3xl text-slate-800">{project.title}</h2>
+                </div>
                 <p className="text-slate-600 text-base md:text-lg">{project.description}</p>
                 <div className="flex flex-wrap gap-4 text-sm text-slate-500">
                   <span className="flex items-center gap-2">

@@ -1,51 +1,15 @@
 import React from 'react';
-import { Mail, Phone, Github, Linkedin, MapPin, Instagram } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 import { Card } from './ui/card';
 import { Button } from './ui/button';
-
-const futureVision =
-  '사용자에게 필요한 백엔드 서비스를 만들며, 나를 세상에 알리는 개발자로 성장하고 싶습니다.';
-
-const contactInfo = [
-  {
-    icon: Mail,
-    label: '이메일',
-    value: 'randirao4245@gmail.com',
-    href: 'mailto:randirao4245@gmail.com'
-  },
-  {
-    icon: Phone,
-    label: '전화번호',
-    value: '010-5606-8381',
-    href: 'tel:010-5606-8381'
-  },
-  {
-    icon: Github,
-    label: 'GitHub',
-    value: 'github.com/randirao',
-    href: 'https://github.com/randirao'
-  },
-  {
-    icon: Linkedin,
-    label: 'LinkedIn',
-    value: 'linkedin.com/in/haeun218',
-    href: 'https://www.linkedin.com/in/haeun218'
-  },
-  {
-    icon: Instagram,
-    label: 'Instagram',
-    value: 'instagram.com/han22._x',
-    href: 'https://www.instagram.com/han22._x/'
-  }
-];
+import { futureVision, contactInfo } from '../data/contact';
 
 export default function ContactSlide() {
   return (
     <div className="p-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-3xl text-slate-800 mb-4"
-          >향후 목표 & 연락처</h1>
+          <h1 className="text-3xl text-slate-800 mb-4">향후 목표 & 연락처</h1>
           <p className="text-slate-600">
             지속적인 성장을 통해 가치 있는 시스템을 만들어가겠습니다
           </p>
@@ -56,7 +20,6 @@ export default function ContactSlide() {
         </Card>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
           <Card className="p-8 bg-white/60 backdrop-blur-sm border-stone-200">
             <h2 className="text-xl text-slate-800 mb-6 text-center">연락처</h2>
             <div className="space-y-4">
@@ -67,7 +30,7 @@ export default function ContactSlide() {
                   </div>
                   <div className="flex-1">
                     <p className="text-sm text-slate-500">{contact.label}</p>
-                    <a 
+                    <a
                       href={contact.href}
                       className="text-slate-700 hover:text-sky-600 transition-colors"
                     >
@@ -77,7 +40,7 @@ export default function ContactSlide() {
                 </div>
               ))}
             </div>
-            
+
             <div className="mt-8 pt-6 border-t border-stone-200">
               <div className="flex items-center gap-2 mb-2">
                 <MapPin className="w-4 h-4 text-slate-500" />
@@ -87,10 +50,9 @@ export default function ContactSlide() {
             </div>
           </Card>
 
-          {/* Call to Action */}
           <Card className="p-8 bg-gradient-to-br from-sky-50 to-amber-50 border border-stone-200">
             <h2 className="text-xl text-slate-800 mb-6 text-center">함께 성장하고 싶습니다</h2>
-            
+
             <div className="space-y-4 mb-8">
               <div className="p-4 bg-white/80 rounded-lg">
                 <h4 className="text-slate-700 mb-2">관심 분야</h4>
@@ -99,7 +61,7 @@ export default function ContactSlide() {
                   성능 최적화, 모니터링
                 </p>
               </div>
-              
+
               <div className="p-4 bg-white/80 rounded-lg">
                 <h4 className="text-slate-700 mb-2">협업 스타일</h4>
                 <p className="text-sm text-slate-600">
@@ -121,7 +83,6 @@ export default function ContactSlide() {
           </Card>
         </div>
 
-        {/* Final Quote */}
         <Card className="mt-12 p-6 bg-gradient-to-r from-sky-100 to-amber-100 border border-stone-200">
           <blockquote className="text-center">
             <p className="text-lg text-slate-700 italic mb-2">

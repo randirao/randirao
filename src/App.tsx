@@ -25,10 +25,11 @@ export default function App() {
 
   return (
     <div
-      className="bg-gradient-to-br from-stone-50 to-yellow-100 flex flex-col"
+      className="flex flex-col"
       style={{
         position: 'relative',
         padding: '5rem 0 0 0',
+        backgroundColor: '#F3F4F6',
       }}
     >
       <Header
@@ -37,7 +38,7 @@ export default function App() {
         onSectionChange={setActiveSection}
       />
 
-      <div className="h-[100vh] bg-gradient-to-br from-stone-50 to-yellow-100 flex flex-col">
+      <div className="h-[100vh] flex flex-col" style={{ backgroundColor: '#F3F4F6' }}>
         <div className="h-[90px] md:h-[80px]"></div>
         <main className="flex-1 max-w-7xl mx-auto px-4 w-full py-8">
           <div className="bg-white/40 backdrop-blur-sm rounded-3xl shadow-lg overflow-hidden min-h-[600px]">

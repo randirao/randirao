@@ -12,10 +12,10 @@ export default function IntroSlide() {
              padding: '3rem',
          }}
     >
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-4xl mx-auto">
         {/* Profile Section */}
         <div className="mb-12">
-          <div className="w-28 h-28 mx-auto mb-6">
+          <div className="w-28 h-28 mb-6">
             <ImageWithFallback
               src="/profile.jpg"
               alt="프로필 사진"
@@ -36,30 +36,27 @@ export default function IntroSlide() {
 
         {/* Core Strengths */}
         <div className="grid md:grid-cols-3 gap-4">
-          <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl text-center">
-            <FileCode2 className="w-8 h-8 mx-auto mb-3 text-slate-700" />
+          <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl">
+            <FileCode2 className="w-8 h-8 mb-3 text-slate-700" />
             <h3 className="text-lg text-slate-800 mb-2">의도가 보이는 코드</h3>
             <p className="text-slate-600 text-sm">
-              쉽게 읽히는 코드를 목표로,<br />
-              명확한 구조와 일관성을 연습합니다.
+              쉽게 읽히는 코드를 목표로, 명확한 구조와 일관성을 연습합니다.
             </p>
           </Card>
 
-          <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl text-center">
-            <Database className="w-8 h-8 mx-auto mb-3 text-slate-700" />
+          <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl">
+            <Database className="w-8 h-8 mb-3 text-slate-700" />
             <h3 className="text-lg text-slate-800 mb-2">견고한 데이터 구조</h3>
             <p className="text-slate-600 text-sm">
-              데이터 흐름을 이해하며,<br />
-              확장성과 정합성을 함께 고려합니다.
+              데이터 흐름을 이해하며, 확장성과 정합성을 함께 고려합니다.
             </p>
           </Card>
 
-          <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl text-center">
-            <Handshake className="w-8 h-8 mx-auto mb-3 text-slate-700" />
+          <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl">
+            <Handshake className="w-8 h-8 mb-3 text-slate-700" />
             <h3 className="text-lg text-slate-800 mb-2">신뢰를 쌓는 약속</h3>
             <p className="text-slate-600 text-sm">
-              말한 것은 지키고,<br />
-              지키기 어려우면 먼저 알립니다.
+              말한 것은 지키고, 지키기 어려우면 먼저 알립니다.
             </p>
           </Card>
         </div>

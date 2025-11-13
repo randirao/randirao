@@ -8,20 +8,20 @@ export default function ContactSlide() {
   return (
     <div className="p-8">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="mb-12">
           <h1 className="text-3xl text-slate-800 mb-4">향후 목표 & 연락처</h1>
           <p className="text-slate-600">
             지속적인 성장을 통해 가치 있는 시스템을 만들어가겠습니다
           </p>
         </div>
 
-        <Card className="mb-12 p-6 bg-gradient-to-r from-sky-100 to-amber-100 border border-stone-200 text-center">
+        <Card className="mb-12 p-6 bg-gradient-to-r from-sky-100 to-amber-100 border border-stone-200">
           <p className="text-lg text-slate-700 leading-relaxed">{futureVision}</p>
         </Card>
 
         <div className="grid lg:grid-cols-2 gap-12">
           <Card className="p-8 bg-white/60 backdrop-blur-sm border-stone-200">
-            <h2 className="text-xl text-slate-800 mb-6 text-center">연락처</h2>
+            <h2 className="text-xl text-slate-800 mb-6">연락처</h2>
             <div className="space-y-4">
               {contactInfo.map((contact, index) => (
                 <div key={index} className="flex items-center gap-4 p-3 rounded-lg hover:bg-stone-50 transition-colors">
@@ -51,7 +51,7 @@ export default function ContactSlide() {
           </Card>
 
           <Card className="p-8 bg-gradient-to-br from-sky-50 to-amber-50 border border-stone-200">
-            <h2 className="text-xl text-slate-800 mb-6 text-center">함께 성장하고 싶습니다</h2>
+            <h2 className="text-xl text-slate-800 mb-6">함께 성장하고 싶습니다</h2>
 
             <div className="space-y-4 mb-8">
               <div className="p-4 bg-white/80 rounded-lg">
@@ -71,7 +71,7 @@ export default function ContactSlide() {
               </div>
             </div>
 
-            <div className="text-center">
+            <div>
               <Button className="bg-sky-600 hover:bg-sky-700 text-white px-8 py-3">
                 <Mail className="w-4 h-4 mr-2" />
                 연락하기
@@ -84,10 +84,9 @@ export default function ContactSlide() {
         </div>
 
         <Card className="mt-12 p-6 bg-gradient-to-r from-sky-100 to-amber-100 border border-stone-200">
-          <blockquote className="text-center">
+          <blockquote>
             <p className="text-lg text-slate-700 italic mb-2">
-              "좋은 개발자는 코드만 잘 짜는 것이 아니라,<br />
-              사용자와 동료를 생각하는 개발자라고 믿습니다"
+              "좋은 개발자는 코드만 잘 짜는 것이 아니라, 사용자와 동료를 생각하는 개발자라고 믿습니다"
             </p>
             <footer className="text-slate-600">- 이하은 -</footer>
           </blockquote>

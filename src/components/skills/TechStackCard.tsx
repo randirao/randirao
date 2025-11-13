@@ -9,7 +9,7 @@ interface TechStackCardProps {
 export default function TechStackCard({ category }: TechStackCardProps) {
   return (
     <Card className="p-6 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl">
-      <div className="text-center mb-4">
+      <div className="mb-4">
         <span className="text-4xl block mb-2">{category.emoji}</span>
         <h3 className="text-lg text-slate-800">{category.title}</h3>
       </div>

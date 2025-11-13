@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileCode2, Database, Handshake } from 'lucide-react';
+import { FileCode2, Database, Handshake, Mail, Phone, Github, Linkedin, Instagram } from 'lucide-react';
 import { Card } from './ui/card';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
@@ -61,11 +61,52 @@ export default function IntroSlide() {
           </Card>
         </div>
 
-        {/* Quote */}
-        <div className="mt-12 p-6 bg-gradient-to-r from-sky-50 to-yellow-200 rounded-2xl shadow-md border border-stone-200">
-          <p className="text-slate-700 italic">
-            "다양한 관점을 조합해 더 나은 경험을 만드는 개발자로 계속 성장하고자 합니다."
-          </p>
+        {/* Contact Section */}
+        <div className="mt-12">
+          <h2 className="text-2xl text-slate-800 mb-6">연락처</h2>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="mailto:randirao4245@gmail.com"
+              className="flex items-center gap-2 px-4 py-3 bg-white/70 backdrop-blur-sm border border-stone-200 rounded-xl hover:shadow-md transition-all"
+            >
+              <Mail className="w-5 h-5 text-slate-600" />
+              <span className="text-slate-700">randirao4245@gmail.com</span>
+            </a>
+            <a
+              href="tel:010-5606-8381"
+              className="flex items-center gap-2 px-4 py-3 bg-white/70 backdrop-blur-sm border border-stone-200 rounded-xl hover:shadow-md transition-all"
+            >
+              <Phone className="w-5 h-5 text-slate-600" />
+              <span className="text-slate-700">010-5606-8381</span>
+            </a>
+            <a
+              href="https://github.com/randirao"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 px-4 py-3 bg-white/70 backdrop-blur-sm border border-stone-200 rounded-xl hover:shadow-md transition-all"
+            >
+              <Github className="w-5 h-5 text-slate-600" />
+              <span className="text-slate-700">GitHub</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/haeun218"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 px-4 py-3 bg-white/70 backdrop-blur-sm border border-stone-200 rounded-xl hover:shadow-md transition-all"
+            >
+              <Linkedin className="w-5 h-5 text-slate-600" />
+              <span className="text-slate-700">LinkedIn</span>
+            </a>
+            <a
+              href="https://www.instagram.com/han22._x/"
+              target="_blank"
+              rel="noreferrer"
+              className="flex items-center gap-2 px-4 py-3 bg-white/70 backdrop-blur-sm border border-stone-200 rounded-xl hover:shadow-md transition-all"
+            >
+              <Instagram className="w-5 h-5 text-slate-600" />
+              <span className="text-slate-700">Instagram</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import IntroSlide from './components/IntroSlide';
 import SkillsSlide from './components/SkillsSlide';
 import WorkSlide from './components/WorkSlide';
-import ContactSlide from './components/ContactSlide';
 import Header from './components/layout/Header';
 import Footer from './components/layout/Footer';
 
@@ -10,7 +9,6 @@ const sections = [
   { id: 'intro', component: IntroSlide, title: '자기소개', emoji: '👋' },
   { id: 'skills', component: SkillsSlide, title: '역량', emoji: '🛠️' },
   { id: 'work', component: WorkSlide, title: '성과', emoji: '💼' },
-  { id: 'contact', component: ContactSlide, title: '연락처', emoji: '📧' },
 ];
 
 export default function App() {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { User, Code, Database, Zap } from 'lucide-react';
+import { FileCode2, Database, Handshake } from 'lucide-react';
 import { Card } from './ui/card';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
@@ -19,7 +19,7 @@ export default function IntroSlide() {
             <ImageWithFallback
               src="/profile.jpg"
               alt="프로필 사진"
-              className="w-28 h-28 rounded-full object-cover shadow-lg border-4 border-white/50"
+              className="w-32 h-32 rounded-full object-cover shadow-lg border-4 border-white/50"
               style={{
                 aspectRatio: '1 / 1',
                 objectFit: 'cover',
@@ -37,7 +37,7 @@ export default function IntroSlide() {
         {/* Core Strengths */}
         <div className="grid md:grid-cols-3 gap-4">
           <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl text-center">
-            <span className="text-3xl block mb-3">✨</span>
+            <FileCode2 className="w-8 h-8 mx-auto mb-3 text-slate-700" />
             <h3 className="text-lg text-slate-800 mb-2">의도가 보이는 코드</h3>
             <p className="text-slate-600 text-sm">
               쉽게 읽히는 코드를 목표로,<br />
@@ -46,7 +46,7 @@ export default function IntroSlide() {
           </Card>
 
           <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl text-center">
-            <span className="text-3xl block mb-3">🗄️</span>
+            <Database className="w-8 h-8 mx-auto mb-3 text-slate-700" />
             <h3 className="text-lg text-slate-800 mb-2">견고한 데이터 구조</h3>
             <p className="text-slate-600 text-sm">
               데이터 흐름을 이해하며,<br />
@@ -55,7 +55,7 @@ export default function IntroSlide() {
           </Card>
 
           <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl text-center">
-            <span className="text-3xl block mb-3">🤝</span>
+            <Handshake className="w-8 h-8 mx-auto mb-3 text-slate-700" />
             <h3 className="text-lg text-slate-800 mb-2">신뢰를 쌓는 약속</h3>
             <p className="text-slate-600 text-sm">
               말한 것은 지키고,<br />

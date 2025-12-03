@@ -36,10 +36,10 @@ export default function App() {
         onSectionChange={setActiveSection}
       />
 
-      <div className="h-[100vh] flex flex-col" style={{ backgroundColor: '#F3F4F6' }}>
+      <div className="min-h-[100vh] flex flex-col" style={{ backgroundColor: '#F3F4F6' }}>
         <div className="h-[90px] md:h-[80px]"></div>
-        <main className="flex-1 max-w-7xl mx-auto px-4 w-full py-8">
-          <div className="bg-white/40 backdrop-blur-sm rounded-3xl shadow-lg overflow-hidden min-h-[600px]">
+        <main className="flex-1 max-w-7xl mx-auto px-4 w-full py-4 md:py-8">
+          <div className="bg-white/40 backdrop-blur-sm rounded-3xl shadow-lg overflow-auto">
             {CurrentComponent && <CurrentComponent />}
           </div>
         </main>

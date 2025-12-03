@@ -1,4 +1,4 @@
-import { Github, ExternalLink, FileText, LucideIcon } from 'lucide-react';
+import {Github, ExternalLink, FileText, LucideIcon, NotebookIcon} from 'lucide-react';
 
 export interface ProjectLink {
   label: string;
@@ -25,7 +25,7 @@ export const featuredProjects: Project[] = [
     badge: '교내 전공동아리 운영 서비스',
     title: '물듬',
     logo: '/muldumLogo.svg',
-    period: '2024 - 현재',
+    period: '2025.03. ~ 현재',
     description:
       '부산소프트웨어마이스터고 전공동아리 운영 과정에서의 불편함을 해결하기 위해 만든 통합 관리 플랫폼입니다.',
     role: 'Backend Developer',
@@ -47,13 +47,13 @@ export const featuredProjects: Project[] = [
     links: [
       { label: '서비스', icon: ExternalLink, href: 'http://v2.muldum.com/' },
       { label: 'GitHub', icon: Github, href: 'https://github.com/arabssm' },
-      { label: 'Notion', icon: FileText, href: 'https://www.notion.so/1c43e26381788020b411c0fd4e8cce4c' }
+      { label: 'Notion', icon: FileText, href: 'https://bssm.notion.site/264f4899fc8680928b01cd214958a478' }
     ]
   },
   {
     badge: '교내 분실물 관리 서비스',
     title: '어디',
-    period: '2024',
+    period: '2025.08.12. ~ 현재',
     logo: '/eodiLogo.svg',
     description:
       '생활부에서 분실물을 노션으로 관리하던 번거로운 흐름을 개선하기 위해 기획한 교내 분실물 관리 서비스입니다.',

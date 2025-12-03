@@ -16,12 +16,15 @@ export default function TechStackCard({category, key}: TechStackCardProps) {
             </div>
 
             <div className="space-y-2">
-                {category.items.map((tech, techIndex) => (
-                    <div key={techIndex} className="flex items-center gap-3 p-2 bg-white/50 rounded-lg">
-                        <span className="text-xl">{tech.emoji}</span>
-                        <span className="text-slate-700 text-sm">{tech.name}</span>
-                    </div>
-                ))}
+                {category.items.map((tech, techIndex) => {
+                    const Icon = tech.icon;
+                    return (
+                        <div key={techIndex} className="flex items-center gap-2 p-2 bg-white/50 rounded-lg">
+                            <Icon className={`text-2xl ${tech.color}`}/>
+                            <span className="text-slate-700 text-sm">{tech.name}</span>
+                        </div>
+                    );
+                })}
             </div>
         </Card>
     );

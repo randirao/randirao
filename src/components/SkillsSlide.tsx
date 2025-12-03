@@ -1,13 +1,19 @@
-import React from 'react';
-import { Sparkles } from 'lucide-react';
+import React, { useState } from 'react';
+import { Sparkles, Award as AwardIcon, FileCheck, ExternalLink } from 'lucide-react';
 import { Card } from './ui/card';
 import { Badge } from './ui/badge';
-import { techCategories, technicalStrengths, softSkills, additionalSkills } from '../data/skills';
+import {techCategories, technicalStrengths, softSkills, additionalSkills, awards, certifications, TechCategory} from '../data/skills';
 import TechStackCard from './skills/TechStackCard';
 import TechnicalStrengthCard from './skills/TechnicalStrengthCard';
 import SoftSkillCard from './skills/SoftSkillCard';
 
 export default function SkillsSlide() {
+  const [selectedCert, setSelectedCert] = useState<string | null>(null);
+
+  const openFile = (filePath: string) => {
+    window.open(filePath, '_blank');
+  };
+
   return (
     <div className="p-8">
       <div className="max-w-6xl mx-auto">
@@ -19,60 +25,88 @@ export default function SkillsSlide() {
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6">
-          {techCategories.map((category) => (
-            <TechStackCard key={category.title} category={category} />
-          ))}
-        </div>
-
-        <div className="mt-12 p-6 bg-gradient-to-r from-sky-50 to-yellow-200 rounded-2xl shadow-md border border-stone-200">
-          <h4 className="text-lg text-slate-800 mb-4 flex items-center gap-2">
-            <Sparkles className="w-5 h-5" />
-            추가 역량
-          </h4>
-          <div className="flex flex-wrap gap-2">
-            {additionalSkills.map((skill) => (
-              <Badge key={skill} variant="outline" className="border-yellow-300 text-slate-600 bg-yellow-50/50 rounded-full px-3 py-1">
-                {skill}
-              </Badge>
+            {techCategories.map((category: TechCategory) => (
+                <TechStackCard key={category.title} category={category} />
             ))}
-          </div>
         </div>
 
+        {/* Awards Section */}
         <div className="mt-12">
-          <h2 className="text-xl text-slate-800 mb-6">기술적 강점</h2>
-          <div className="space-y-8">
-            {technicalStrengths.map((strength) => (
-              <TechnicalStrengthCard key={strength.title} strength={strength} />
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-12">
-          <h2 className="text-xl text-slate-800 mb-6">소프트 스킬</h2>
+          <h2 className="text-xl text-slate-800 mb-6 flex items-center gap-2">
+            <AwardIcon className="w-5 h-5" />
+            수상 내역
+          </h2>
           <div className="grid md:grid-cols-3 gap-6">
-            {softSkills.map((skill) => (
-              <SoftSkillCard key={skill.title} skill={skill} />
+            {awards.map((award, index) => (
+              <Card
+                key={index}
+                className={`p-6 bg-gradient-to-br from-yellow-50 to-amber-50 border-yellow-200 hover:shadow-lg transition-all rounded-2xl ${award.awardFile ? 'cursor-pointer hover:scale-[1.02]' : ''}`}
+                onClick={() => award.awardFile && openFile(award.awardFile)}
+              >
+                <div className="flex items-start gap-3">
+                  <div className="w-10 h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0">
+                    <AwardIcon className="w-5 h-5 text-yellow-900" />
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-lg text-slate-800 mb-1">{award.title}</h3>
+                      {award.awardFile && (
+                        <ExternalLink className="w-4 h-4 text-yellow-700" />
+                      )}
+                    </div>
+                    <p className="text-sm text-slate-600 mb-2">{award.organization}</p>
+                    <p className="text-xs text-slate-500">{award.date}</p>
+                    {award.description && (
+                      <p className="text-sm text-slate-600 mt-3">{award.description}</p>
+                    )}
+                    {award.awardFile && (
+                      <p className="text-xs text-yellow-700 mt-3 flex items-center gap-1">
+                        {/*<ExternalLink className="w-3 h-3" />*/}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </Card>
             ))}
           </div>
         </div>
 
-        <Card className="mt-12 p-6 bg-gradient-to-r from-sky-50 to-amber-50 border border-stone-200">
-          <h3 className="text-lg text-slate-800 mb-4">개발 철학</h3>
+        {/* Certification Section */}
+        <div className="mt-12">
+          <h2 className="text-xl text-slate-800 mb-6 flex items-center gap-2">
+            <FileCheck className="w-5 h-5" />
+            자격증
+          </h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <div>
-              <h4 className="text-slate-700 mb-2">사용자 중심</h4>
-              <p className="text-sm text-slate-600">
-                최종 사용자의 경험을 항상 고려하여 성능과 안정성을 보장하는 시스템 구축
-              </p>
-            </div>
-            <div>
-              <h4 className="text-slate-700 mb-2">지속적 개선</h4>
-              <p className="text-sm text-slate-600">
-                코드 품질과 시스템 성능을 지속적으로 모니터링하고 개선
-              </p>
-            </div>
+            {certifications.map((cert, index) => (
+              <Card
+                key={index}
+                className={`p-6 bg-gradient-to-br from-blue-50 to-sky-50 border-blue-200 hover:shadow-lg transition-all rounded-2xl ${cert.certificateFile ? 'cursor-pointer hover:scale-[1.02]' : ''}`}
+                onClick={() => cert.certificateFile && openFile(cert.certificateFile)}
+              >
+                <div className="flex items-start gap-3">
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between">
+                      <h3 className="text-lg text-slate-800 mb-1">{cert.name}</h3>
+                      {cert.certificateFile && (
+                        <ExternalLink className="w-4 h-4 text-blue-600" />
+                      )}
+                    </div>
+                    <p className="text-sm text-slate-600 mb-1">{cert.issuer}</p>
+                    <p className="text-xs text-slate-500">{cert.date}</p>
+                    {cert.id && (
+                      <p className="text-xs text-slate-400 mt-2">자격번호: {cert.id}</p>
+                    )}
+                    {cert.certificateFile && (
+                      <p className="text-xs text-blue-600 mt-3 flex items-center gap-1">
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </Card>
+            ))}
           </div>
-        </Card>
+        </div>
       </div>
     </div>
   );

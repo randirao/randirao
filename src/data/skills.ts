@@ -1,13 +1,23 @@
 import { Brain, Users, Target, BookOpen, LucideIcon } from 'lucide-react';
+import React from 'react';
+import {
+    SiOpenjdk as SiJava,
+    SiSpring as SiSpringboot,
+    SiPostgresql,
+    SiMysql,
+    SiOracle,
+    SiDocker,
+    SiGit, SiPython, SiGithub, SiOpenjdk
+} from 'react-icons/si';
 
 export interface TechItem {
   name: string;
-  emoji: string;
+  color: string;
+  icon: React.ComponentType<{className?: string}>;
 }
 
 export interface TechCategory {
   title: string;
-  emoji: string;
   items: TechItem[];
 }
 
@@ -22,7 +32,6 @@ export interface TechnicalStrength {
 
 export interface SoftSkill {
   title: string;
-  icon: LucideIcon;
   description: string;
   score: number;
 }
@@ -30,27 +39,26 @@ export interface SoftSkill {
 export const techCategories: TechCategory[] = [
   {
     title: 'Backend',
-    emoji: '☕',
     items: [
-      { name: 'Java', emoji: '☕' },
-      { name: 'Spring Boot', emoji: '🌱' }
+      {name: 'Python', icon: SiPython, color: 'text-sky-600'},
+      { name: 'Java', icon: SiJava, color: 'text-red-600' },
+      { name: 'Spring Boot', icon: SiSpringboot, color: 'text-green-700' }
     ]
   },
   {
     title: 'Database',
-    emoji: '🗃️',
     items: [
-      { name: 'PostgreSQL', emoji: '🐘' },
-      { name: 'MySQL', emoji: '🐬' },
-      { name: 'Oracle', emoji: '🏛️' }
+      { name: 'PostgreSQL', icon: SiPostgresql, color: 'text-blue-700' },
+      { name: 'MySQL', icon: SiMysql, color: 'text-sky-600' },
+      { name: 'Oracle', icon: SiOracle, color: 'text-red-700' }
     ]
   },
   {
     title: 'Infra & Collaboration',
-    emoji: '⚙️',
     items: [
-      { name: 'Docker', emoji: '🐳' },
-      { name: 'Git', emoji: '🌳' }
+      { name: 'Docker', icon: SiDocker, color: 'text-sky-600' },
+      { name: 'Git', icon: SiGit, color: 'text-red-700' },
+      { name: 'GitHub', icon: SiGithub, color: 'text-slate-800' }
     ]
   }
 ];
@@ -85,19 +93,16 @@ export const technicalStrengths: TechnicalStrength[] = [
 export const softSkills: SoftSkill[] = [
   {
     title: '커뮤니케이션',
-    icon: Users,
     description: '기술적 내용을 비개발자도 이해할 수 있게 설명',
     score: 85
   },
   {
     title: '목표 지향성',
-    icon: Target,
     description: '명확한 목표 설정과 체계적인 업무 추진',
     score: 90
   },
   {
     title: '학습 능력',
-    icon: BookOpen,
     description: '새로운 기술 습득과 빠른 적응력',
     score: 92
   }
@@ -111,4 +116,52 @@ export const additionalSkills = [
   '문서화',
   '협업 회의록',
   '피드백 반영'
+];
+
+export interface Award {
+  title: string;
+  organization: string;
+  date: string;
+  description?: string;
+  awardFile?: string;
+}
+
+export interface Certification {
+  name: string;
+  issuer: string;
+  date: string;
+  id?: string;
+  certificateFile?: string;
+}
+
+export const awards: Award[] = [
+  {
+    title: '부산디지털혁신아카데미해커톤',
+    organization: '부산정보산업진흥원',
+    date: '2024.11.20.',
+    description: '부산 시민을 위한 AI 추천 맞춤형 식단 서비스',
+    awardFile: './2024년_부산디지털혁신아카데미해커톤_상장_밥늦즈(노유현_박선영_이하은)-1.png',
+  },
+  {
+    title: 'SW·AI 해카톤&윤리캠프',
+    organization: '부산교육연구정보원',
+    date: '2025.08.13. ~ 2025.08.14',
+    description: '수상 내역 설명'
+  },
+  {
+    title: '수상명 3',
+    organization: '주최 기관',
+    date: '2024.03',
+    description: '수상 내역 설명'
+  }
+];
+
+export const certifications: Certification[] = [
+  {
+    name: '정보처리산업기사',
+    issuer: '한국산업인력공단',
+    date: '2025.09.17.',
+    id: '25251030400E',
+    certificateFile: '/certificate.pdf'
+  }
 ];

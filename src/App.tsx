@@ -8,7 +8,7 @@ import Footer from './components/layout/Footer';
 const sections = [
   { id: 'intro', component: IntroSlide, title: '자기소개', emoji: '👋' },
   { id: 'skills', component: SkillsSlide, title: '역량', emoji: '🛠️' },
-  { id: 'work', component: WorkSlide, title: '성과', emoji: '💼' },
+  { id: 'work', component: WorkSlide, title: '프로젝트', emoji: '💼' },
 ];
 
 export default function App() {

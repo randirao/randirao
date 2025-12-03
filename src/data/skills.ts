@@ -120,6 +120,7 @@ export const additionalSkills = [
 
 export interface Award {
   title: string;
+  rally: string;
   organization: string;
   date: string;
   description?: string;
@@ -136,21 +137,24 @@ export interface Certification {
 
 export const awards: Award[] = [
   {
-    title: '부산디지털혁신아카데미해커톤',
+    title: '혁신상',
+    rally: '부산디지털혁신아카데미해커톤',
     organization: '부산정보산업진흥원',
     date: '2024.11.20.',
     description: '부산 시민을 위한 AI 추천 맞춤형 식단 서비스',
     awardFile: './2024년_부산디지털혁신아카데미해커톤_상장_밥늦즈(노유현_박선영_이하은)-1.png',
   },
   {
-    title: 'SW·AI 해카톤&윤리캠프',
+    title: '우수상',
+    rally: 'SW·AI 해카톤&윤리캠프',
     organization: '부산교육연구정보원',
     date: '2025.08.13. ~ 2025.08.14',
     description: '수상 내역 설명'
   },
   {
-    title: '수상명 3',
-    organization: '주최 기관',
+    title: '장려상(4등)',
+    rally: '2025학년도 전공동아리 프로젝트 결과 전시회',
+    organization: '부산소프트웨어마이스터고등학교',
     date: '2024.03',
     description: '수상 내역 설명'
   }

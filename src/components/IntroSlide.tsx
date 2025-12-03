@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileCode2, Database, Handshake, Mail, Phone, Github, Linkedin, Instagram } from 'lucide-react';
+import { FileCode2, Database, Handshake, Mail, Phone, Github, Linkedin } from 'lucide-react';
 import { Card } from './ui/card';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
@@ -34,35 +34,8 @@ export default function IntroSlide() {
           </p>
         </div>
 
-        {/* Core Strengths */}
-        <div className="grid md:grid-cols-3 gap-4">
-          <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl">
-            <FileCode2 className="w-8 h-8 mb-3 text-slate-700" />
-            <h3 className="text-lg text-slate-800 mb-2">의도가 보이는 코드</h3>
-            <p className="text-slate-600 text-sm">
-              쉽게 읽히는 코드를 목표로, 명확한 구조와 일관성을 연습합니다.
-            </p>
-          </Card>
-
-          <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl">
-            <Database className="w-8 h-8 mb-3 text-slate-700" />
-            <h3 className="text-lg text-slate-800 mb-2">견고한 데이터 구조</h3>
-            <p className="text-slate-600 text-sm">
-              데이터 흐름을 이해하며, 확장성과 정합성을 함께 고려합니다.
-            </p>
-          </Card>
-
-          <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl">
-            <Handshake className="w-8 h-8 mb-3 text-slate-700" />
-            <h3 className="text-lg text-slate-800 mb-2">신뢰를 쌓는 약속</h3>
-            <p className="text-slate-600 text-sm">
-              말한 것은 지키고, 지키기 어려우면 먼저 알립니다.
-            </p>
-          </Card>
-        </div>
-
         {/* Contact Section */}
-        <div className="mt-12">
+        <div className="mt-8 md:mt-12">
           <h2 className="text-2xl text-slate-800 mb-6">연락처</h2>
           <div className="flex flex-wrap gap-4">
             <a
@@ -97,16 +70,34 @@ export default function IntroSlide() {
               <Linkedin className="w-5 h-5 text-slate-600" />
               <span className="text-slate-700">LinkedIn</span>
             </a>
-            <a
-              href="https://www.instagram.com/han22._x/"
-              target="_blank"
-              rel="noreferrer"
-              className="flex items-center gap-2 px-4 py-3 bg-white/70 backdrop-blur-sm border border-stone-200 rounded-xl hover:shadow-md transition-all"
-            >
-              <Instagram className="w-5 h-5 text-slate-600" />
-              <span className="text-slate-700">Instagram</span>
-            </a>
           </div>
+        </div>
+
+        {/* Core Strengths */}
+        <div className="grid md:grid-cols-3 gap-4 mt-12">
+          <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl">
+            <FileCode2 className="w-8 h-8 mb-3 text-slate-700" />
+            <h3 className="text-lg text-slate-800 mb-2">의도가 보이는 코드</h3>
+            <p className="text-slate-600 text-sm">
+              쉽게 읽히는 코드를 목표로, 명확한 구조와 일관성을 연습합니다.
+            </p>
+          </Card>
+
+          <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl">
+            <Database className="w-8 h-8 mb-3 text-slate-700" />
+            <h3 className="text-lg text-slate-800 mb-2">견고한 데이터 구조</h3>
+            <p className="text-slate-600 text-sm">
+              데이터 흐름을 이해하며, 확장성과 정합성을 함께 고려합니다.
+            </p>
+          </Card>
+
+          <Card className="p-5 bg-white/70 backdrop-blur-sm border-stone-200 hover:shadow-lg transition-all rounded-2xl">
+            <Handshake className="w-8 h-8 mb-3 text-slate-700" />
+            <h3 className="text-lg text-slate-800 mb-2">신뢰를 쌓는 약속</h3>
+            <p className="text-slate-600 text-sm">
+              말한 것은 지키고, 지키기 어려우면 먼저 알립니다.
+            </p>
+          </Card>
         </div>
       </div>
     </div>

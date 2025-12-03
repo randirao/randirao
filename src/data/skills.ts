@@ -155,7 +155,7 @@ export const awards: Award[] = [
     title: '장려상(4등)',
     rally: '2025학년도 전공동아리 프로젝트 결과 전시회',
     organization: '부산소프트웨어마이스터고등학교',
-    date: '2024.03',
+    date: '2025.03. ~ 2025.11.27.',
     description: '수상 내역 설명'
   }
 ];

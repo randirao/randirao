@@ -6,7 +6,7 @@ export default function WorkSlide() {
     <div className="p-8">
       <div className="max-w-6xl mx-auto">
         <div className="mb-12">
-          <h1 className="text-3xl text-slate-800 mb-4">성과</h1>
+          <h1 className="text-3xl text-slate-800 mb-4">프로젝트</h1>
           <p className="text-slate-600">
             실무 프로젝트와 경험을 하나의 여정으로 묶어 보여드립니다.
           </p>

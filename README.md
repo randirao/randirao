@@ -8,8 +8,8 @@
 
 ## Projects
 
-- **[물듬 (Muldum)](http://v2.muldum.com/)** - 전공동아리 통합 관리 플랫폼 | [GitHub](https://github.com/arabssm)
-- **[어디 (Eodi)](https://github.com/BSSMEOD)** - 생활부 분실물 관리 서비스
+- **[물듬 (Muldum)](https://v2.muldum.com/)** - 전공동아리 통합 관리 플랫폼 | [GitHub](https://github.com/arabssm)
+- **[어디 (Eodi)]()** - 생활부 분실물 관리 서비스 | [GitHub](https://github.com/BSSMEOD)
 
 ---
 

@@ -45,7 +45,7 @@ export const featuredProjects: Project[] = [
     ],
     tech: ['Java', 'Spring Boot', 'PostgreSQL', 'Docker', 'Git'],
     links: [
-      { label: '서비스', icon: ExternalLink, href: 'http://v2.muldum.com/' },
+      { label: '서비스', icon: ExternalLink, href: 'https://v2.muldum.com/' },
       { label: 'GitHub', icon: Github, href: 'https://github.com/arabssm' },
       { label: 'Notion', icon: FileText, href: 'https://bssm.notion.site/264f4899fc8680928b01cd214958a478' }
     ]

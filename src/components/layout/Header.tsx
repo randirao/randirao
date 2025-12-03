@@ -26,6 +26,7 @@ export default function Header({ sections, activeSection, onSectionChange }: Hea
               <button
                 key={section.id}
                 onClick={() => onSectionChange(section.id)}
+                style={{ cursor: 'pointer' }}
                 className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm transition-all duration-300 ${
                   activeSection === section.id
                     ? 'bg-yellow-300 text-slate-800 shadow-md'
@@ -45,6 +46,7 @@ export default function Header({ sections, activeSection, onSectionChange }: Hea
             <button
               key={section.id}
               onClick={() => onSectionChange(section.id)}
+              style={{ cursor: 'pointer' }}
               className={`flex items-center gap-2 px-3 py-2 rounded-full text-sm whitespace-nowrap transition-all duration-300 ${
                 activeSection === section.id
                   ? 'bg-yellow-300 text-slate-800 shadow-md'
